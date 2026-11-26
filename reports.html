@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Incident Archive | Lux & Nadia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            RELATIONSHIP RECORDS
+            <span>PRIVATE ARCHIVE · LUX & NADIA</span>
+        </div>
+
+        <div class="document-status">
+            INCIDENT REPORT ARCHIVE
+        </div>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="intro">
+            <p class="eyebrow">RELATIONSHIP RECORDS · 002</p>
+            <h1>Incident Archive</h1>
+            <p class="subtitle">
+                A documented history of challenges, reflections and resolutions.
+            </p>
+        </section>
+
+        <section class="archive">
+
+            <div class="archive-header">
+                <div>
+                    <h2>Incident Reports</h2>
+                    <span id="report-count">0 RECORDS</span>
+                </div>
+
+                <a href="report-form.html" class="new-report-button">
+                    + New Report
+                </a>
+            </div>
+
+            <div class="archive-controls">
+
+                <div class="archive-controls">
+
+                    <div id="filter-tags">
+
+                        <label>
+                            <input type="checkbox" value="Communication">
+                            Communication
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Misunderstanding">
+                            Misunderstanding
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Reassurance">
+                            Reassurance
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Expectations">
+                            Expectations
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Jealousy">
+                            Jealousy
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Boundaries">
+                            Boundaries
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Emotional support">
+                            Emotional support
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Other">
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="reports-list">
+                <p>Loading reports...</p>
+            </div>
+
+        </section>
+
+        <a href="index.html" class="back-button">
+            ← Back to dashboard
+        </a>
+
+    </main>
+
+    <footer>
+        <span>RELATIONSHIP RECORDS SYSTEM</span>
+        <span>CONFIDENTIAL · LUX & NADIA</span>
+    </footer>
+
+    <script src="js/reports.js"></script>
+
+</body>
+</html>

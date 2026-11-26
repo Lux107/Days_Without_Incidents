@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Days Without Incidents | Lux & Nadia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            RELATIONSHIP RECORDS
+            <span>PRIVATE ARCHIVE · LUX & NADIA</span>
+        </div>
+
+        <div class="document-status">
+            PERSONAL RECORD SYSTEM
+        </div>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="intro">
+            <p class="eyebrow">RELATIONSHIP MONITORING · 001</p>
+            <h1>Days Without Incidents</h1>
+            <p class="subtitle">
+                A shared record of growth, understanding and progress.
+            </p>
+        </section>
+
+        <section class="calendar-section">
+
+            <div id="calendar-container">
+
+            </div>
+
+            <p class="model-caption">
+                CURRENT STREAK · LUX & NADIA
+            </p>
+
+        </section>
+
+        <section class="statistics">
+
+            <div class="stat-card">
+                <span class="stat-label">LONGEST STREAK</span>
+                <span class="stat-value" id="longest-streak">0 days</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">AVERAGE DAYS BETWEEN INCIDENTS</span>
+                <span class="stat-value" id="average-streak">—</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <a href="reports.html" class="report-button" title="Open incident archive">
+        <span>▤</span>
+    </a>
+
+    <footer>
+        <span>RELATIONSHIP RECORDS SYSTEM</span>
+        <span>CONFIDENTIAL · LUX & NADIA</span>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Incident Report | Lux & Nadia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="brand">
+            RELATIONSHIP RECORDS
+            <span>PRIVATE ARCHIVE · LUX & NADIA</span>
+        </div>
+        <div class="document-status">NEW REPORT</div>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="intro">
+            <p class="eyebrow">RELATIONSHIP RECORDS · REPORT GENERATOR</p>
+            <h1>Incident Report</h1>
+            <p class="subtitle">
+                A space to document what happened, understand each other,
+                and reflect without assigning blame.
+            </p>
+        </section>
+
+        <form id="incident-form">
+
+            <section class="incident-details">
+
+                <div class="detail-header">
+                    <h2>Report Information</h2>
+                    <span>NEW RECORD</span>
+                </div>
+
+                <div class="form-field">
+                    <label for="date">Incident date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="time">Approximate time</label>
+                    <input type="time" id="time">
+                </div>
+
+                <div class="form-field">
+                    <label for="reportedBy">Reported by</label>
+                    <select id="reportedBy" required>
+                        <option value="">Select person</option>
+                        <option value="Nadia">Nadia</option>
+                        <option value="Lux">Lux</option>
+                    </select>
+                </div>
+
+                <div class="detail-section">
+                    <label>Categories</label>
+
+                    <div class="form-categories">
+                        <label><input type="checkbox" name="tags" value="Communication"> Communication</label>
+                        <label><input type="checkbox" name="tags" value="Misunderstanding"> Misunderstanding</label>
+                        <label><input type="checkbox" name="tags" value="Reassurance"> Reassurance</label>
+                        <label><input type="checkbox" name="tags" value="Expectations"> Expectations</label>
+                        <label><input type="checkbox" name="tags" value="Jealousy"> Jealousy</label>
+                        <label><input type="checkbox" name="tags" value="Boundaries"> Boundaries</label>
+                        <label><input type="checkbox" name="tags" value="Emotional support"> Emotional support</label>
+                        <label><input type="checkbox" name="tags" value="Other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <label for="summary">Incident summary</label>
+                    <textarea id="summary" rows="4" required
+                              placeholder="What happened? Describe the situation objectively..."></textarea>
+                </div>
+
+                <div class="detail-section">
+                    <label for="perspective">Perspective</label>
+                    <textarea id="perspective" rows="4"
+                              placeholder="How did you experience the situation?"></textarea>
+                </div>
+
+                <div class="detail-section">
+                    <label for="cause">Underlying cause</label>
+                    <textarea id="cause" rows="3"
+                              placeholder="What might have contributed to the situation?"></textarea>
+                </div>
+
+                <div class="detail-section">
+                    <label for="needs">Needs</label>
+                    <textarea id="needs" rows="3"
+                              placeholder="What did you need at that moment?"></textarea>
+                </div>
+
+                <div class="detail-section">
+                    <label for="reflection">Reflection</label>
+                    <textarea id="reflection" rows="3"
+                              placeholder="What can we learn from this?"></textarea>
+                </div>
+
+                <div class="detail-section">
+                    <label for="resolution">Resolution</label>
+                    <textarea id="resolution" rows="3"
+                              placeholder="How was the situation addressed?"></textarea>
+                </div>
+
+                <div class="form-field">
+                    <label for="status">Report status</label>
+                    <select id="status" required>
+                        <option value="Ongoing">Ongoing</option>
+                        <option value="Resolved">Resolved</option>
+                        <option value="Needs discussion">Needs discussion</option>
+                    </select>
+                </div>
+
+                <div class="detail-section">
+                    <button type="submit" class="back-button">
+                        Download JSON report
+                    </button>
+                    <p id="form-message"></p>
+                </div>
+
+            </section>
+
+        </form>
+
+        <a href="reports.html" class="back-button">
+            ← Back to archive
+        </a>
+
+    </main>
+
+    <footer>
+        <span>RELATIONSHIP RECORDS SYSTEM</span>
+        <span>CONFIDENTIAL · LUX & NADIA</span>
+    </footer>
+
+    <script src="js/report-form.js"></script>
+
+</body>
+</html>
